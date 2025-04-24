@@ -20,7 +20,6 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
-  
   .catalog {
     max-width: 375px;
     padding-top: 24px;
@@ -87,8 +86,26 @@ body {
     margin-left: 28px;
   }
 
-  @media screen and (min-width:320px) {
-}
+  .catalog-item.hidden {
+    display: none;
+  }
+  
+  .show-more-btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 44px;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 160px;
+    height: 48px;
+    background: #3350e9;
+    color: #fbfbfb;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+  }
 
     @media screen and (min-width: 768px) {
         .container {
@@ -111,6 +128,15 @@ body {
         
           .catalog-item {
             width: calc((100% - 24px) / 2);
+          }
+          @media screen and (min-width: 768px) {
+            .catalog-item.hidden {
+              display: flex;
+            }
+          
+            .show-more-btn {
+              display: none;
+            }
           }
       }
 
