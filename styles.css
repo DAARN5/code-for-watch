@@ -1,33 +1,10 @@
 
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-body {
-    background-color: #f4f4f4;
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .container {
-    max-width: 375px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
   .catalog {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #ffffff;
+    padding-bottom: 60px;
   }
   
     .title-catalog {
-    font-family: var(--font-family);
+    font-family: var(--semibold-font);
     font-weight: 600;
     font-size: 32px;
     line-height: 100%;
@@ -58,14 +35,19 @@ body {
     justify-content: start;
     text-align: left;
     position: relative;
+    padding: 42px 28px 28px;
+    width: 100%;
+    max-width: 375px;
+    
   }
   
   .catalog-images {
     width: 208px;
     height: 226px;
-    margin: 42px auto 0;
+    margin: o auto;
     display: block;
     object-fit: contain;
+    padding-left: 35px;
   }
   
   .catalog-subtitle {
@@ -74,15 +56,15 @@ body {
     line-height: 125%;
     letter-spacing: -0.02em;
     color: #0c0c0c;
-    margin-top: 28px;
-    margin-left: 28px;
+    margin: 0;
+    padding-top: 28px;
   }
   
   .catalog-text {
     font-size: 14px;
     color: #888;
     margin: 0;
-    margin-left: 28px;
+    padding-top: 8px;
   }
 
   .catalog-item.hidden {
@@ -96,26 +78,18 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 16px;
-    width: 160px;
-    height: 48px;
     background: #3350e9;
     color: #fbfbfb;
     font-weight: 500;
     font-size: 14px;
     line-height: 129%;
     text-align: center;
+    white-space: nowrap;
   }
 
     @media screen and (min-width: 768px) {
-        .container {
-            max-width: 704px;
-            padding-left: 32px;
-            padding-right: 32px;
-            margin: 0 auto;
-          }
+      
         .catalog {
-        
-            padding-top: 40px;
             padding-bottom: 40px;
         }
 
@@ -141,11 +115,11 @@ body {
             border: 1px solid rgba(12, 12, 12, 0.05);
             border-radius: 30px;
             height: 414px;
+            justify-content: start;
             background: #f3f3f3;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            justify-content: start;
             text-align: left;
             position: relative;
             max-width: 344px;
@@ -154,9 +128,9 @@ body {
           .catalog-images {
             width: 268px;
             height: 292px;
-            margin: 34px auto 0;
             display: block;
             object-fit: contain;
+            padding: 0;
         }
 
         .catalog-subtitle {
@@ -169,15 +143,13 @@ body {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-top: 20px;
-            margin-left: 32px;
+            padding: 0;
+            margin-top: 10px;
         }
 
         .catalog-text {
             font-size: 14px;
             color: #888;
-            margin-left: 32px;
-            margin-top: -8px;
         }
 
             .catalog-item.hidden {
@@ -187,14 +159,13 @@ body {
             .show-more-btn {
               display: none;
             }
-          
+         
       }
 
       @media screen and (min-width: 1280px) {
-        .container {
-            max-width: 1150px;
-            padding-left: 65px;
-            padding-right: 65px;
+       
+        .catalog {
+            padding-bottom: 100px;
         }
       
         .catalog-list {
